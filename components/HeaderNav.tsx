@@ -15,6 +15,7 @@ export default function HeaderNav() {
                     alt="logo"
                     width={162}
                     height={27}
+                    loading="eager"
                 />
                 <div className={`absolute bg-[#fcfcfc] duration-500 w-full right-0 px-3 gap-3 overflow-hidden flex flex-col top-15 
                                 ${isOpen ? 'py-3 max-h-screen' : 'py-0 max-h-0'} 
