@@ -3,13 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+//Icons
+import { IoMdMenu } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
 
 export default function HeaderNav() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return(
         <header className="max-w-[120rem] w-full">
-            <nav className="relative w-full py-5 px-3 lg:px-10 flex items-center gap-10">
+            <nav className="relative w-full py-5 px-5 lg:px-10 flex items-center gap-10">
                 <Image 
                     src={'/images/logo.png'}
                     alt="logo"
@@ -65,10 +68,11 @@ export default function HeaderNav() {
                 </div>
                 <button 
                     type="button" 
-                    className="ms-auto lg:hidden"
+                    className="ms-auto lg:hidden active:rotate-180 duration-500"
+                    title="menu"
                     onClick={() => setIsOpen(!isOpen)}
                 >
-                    Menu
+                    {isOpen ? <IoMdMenu size={25} /> : <IoCloseSharp size={25} />}
                 </button>
             </nav>
         </header>
