@@ -12,7 +12,7 @@ export default function SectionThree() {
             <h2 className="text-[#43687a] font-semibold text-[40px]">Grasshopper stories</h2>
             <div className="overflow-hidden w-full py-15">
                 <div
-                    className="flex transition-transform duration-500"
+                    className="flex transition-transform duration-500 w-full md:w-[75%] lg:w-[40%] mx-auto"
                     style={{ transform: `translateX(-${(currStory - 1) * 100}%)` }}
                 >
                     <SectionThreeItem 
