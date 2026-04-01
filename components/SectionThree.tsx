@@ -21,6 +21,7 @@ export default function SectionThree() {
                         name="Anonym 1"
                         storyNum={1}
                         currStory={currStory}
+                        setCurrStory={setCurrStory}
                     />
                     <SectionThreeItem 
                         img={'/images/profpic_2.jpg'}
@@ -28,6 +29,7 @@ export default function SectionThree() {
                         name="Anonym 2"
                         storyNum={2}
                         currStory={currStory}
+                        setCurrStory={setCurrStory}
                     />
                     <SectionThreeItem 
                         img={'/images/profpic_3.jpg'}
@@ -35,6 +37,7 @@ export default function SectionThree() {
                         name="Anonym 3"
                         storyNum={3}
                         currStory={currStory}
+                        setCurrStory={setCurrStory}
                     />
                     <SectionThreeItem 
                         img={'/images/profpic_4.jpg'}
@@ -42,6 +45,7 @@ export default function SectionThree() {
                         name="Anonym 4"
                         storyNum={4}
                         currStory={currStory}
+                        setCurrStory={setCurrStory}
                     />
                 </div>
             </div>
