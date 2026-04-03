@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import SectionThreeBtn from "./SectionThreeBtn";
 //Icons
-import { FaLaptop, FaMobileAlt } from "react-icons/fa";
+import { FaLaptop, FaMobileAlt, FaTabletAlt  } from "react-icons/fa";
 
 export default function SectionFive() {
     const [currSlide, setCurrSlide] = useState<number>(0);
@@ -21,6 +21,11 @@ export default function SectionFive() {
                 ico: FaMobileAlt,
                 h: "Slide 2",
                 img: "/images/pngtree-mobile-phonein-hand-communicate-png-image_10247487.png"
+            },
+            {
+                ico: FaTabletAlt,
+                h: "Slide 3",
+                img: "/images/one-hand-holding-tablet-transparent-png-stickpng-7.png"
             }
         ]
     };
@@ -28,8 +33,8 @@ export default function SectionFive() {
     const Icon = SlideText.sliders[currSlide].ico;
 
     return(
-        <div className="grid grid-cols-2 py-15 overflow-hidden">
-            <div className="flex flex-col items-start justify-center ps-50">
+        <div className="grid grid-rows-2 grid-cols-2 py-15 overflow-hidden">
+            <div className="flex items-end ps-5 md:ps-15 lg:ps-50">
                 <div 
                     key={currSlide}
                     className="text-[#43687a] flex flex-col items-start animate-[fadeInUp_0.5s_ease-out] duration-500"
@@ -40,8 +45,21 @@ export default function SectionFive() {
 
                     <h3 className="font-semibold text-[35px]">{SlideText.sliders[currSlide].h}</h3>
                 </div>
+            </div>
+
+            <div key={currSlide} className="row-span-2 md:h-[25rem] lg:h-[35rem] animate-[fadeIn_0.5s_ease-out]">
+                <Image 
+                    src={SlideText.sliders[currSlide].img}
+                    alt={SlideText.sliders[currSlide].h}
+                    width={600}
+                    height={600}
+                    className="ms-auto my-auto"
+                />
+            </div>
+
+            <div className="ps-5 md:ps-15 lg:ps-50 flex items-start">
                 <div className="flex gap-0">
-                    {[0,1].map(n => (
+                    {[0,1,2].map(n => (
                         <SectionThreeBtn
                             key={n}
                             numb={n}
@@ -50,15 +68,6 @@ export default function SectionFive() {
                         />
                     ))}
                 </div>
-            </div>
-            <div key={currSlide} className="h-[600px] animate-[fadeIn_0.5s_ease-out]">
-                <Image 
-                    src={SlideText.sliders[currSlide].img}
-                    alt={SlideText.sliders[currSlide].h}
-                    width={600}
-                    height={600}
-                    className="ms-auto"
-                />
             </div>
         </div>
     );

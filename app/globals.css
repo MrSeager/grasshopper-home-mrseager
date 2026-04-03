@@ -41,4 +41,31 @@ body {
   }
 }
 
+/*Running line*/
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-horizontal {
+  animation: scroll-horizontal 12s linear infinite;
+}
+
+@keyframes scroll-horizontal-reverse {
+  0% { 
+    transform: translateX(-50%); 
+  }
+  100% { 
+    transform: translateX(0); 
+  }
+}
+
+.animate-scroll-horizontal-reverse {
+  animation: scroll-horizontal-reverse 12s linear infinite;
+}
+
 
