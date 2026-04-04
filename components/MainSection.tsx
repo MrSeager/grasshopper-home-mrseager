@@ -5,6 +5,7 @@ import SectionThree from "./SectionThree";
 import SectionFour from "./SectionFour";
 import SectionFive from "./SectionFive";
 import SectionSix from "./SectionSix";
+import SectionSeven from "./SectionSeven";
 
 export default function MainSection () {
     return (
@@ -15,6 +16,7 @@ export default function MainSection () {
         <SectionFour />
         <SectionFive />
         <SectionSix />
+        <SectionSeven />
       </main>
     );
 }
