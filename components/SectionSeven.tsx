@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function SectionSeven() {
     return(
-        <div className="bg-[#4ee8e2] flex px-50 pt-20">
+        <div className="bg-[#4ee8e2] flex flex-col md:flex-row px-5 lg:px-50 pt-20">
             <div className="pb-15 flex flex-col items-start justify-center gap-10">
-                <h3 className="text-base/10 text-[35px] font-semibold text-[#43687a]">Get started on your adventure in coding with Grasshopper.</h3>
-                <div className="flex gap-3">
+                <h3 className="text-base/10 text-[35px] font-semibold text-[#43687a] w-full text-center md:text-start">Get started on your adventure in coding with Grasshopper.</h3>
+                <div className="flex flex-col md:flex-row items-center justify-center md:justify-start  w-full gap-3">
                     <button 
                         type="button"
                         className="cursor-pointer bg-[#45c14e] font-semibold text-[#fcfcfc] border-2 border-[#45c14e] rounded rounded-full px-10 py-2 text-[15px] duration-500
@@ -42,7 +42,7 @@ export default function SectionSeven() {
                     </button>
                 </div>
             </div>
-            <div className="flex justify-end">
+            <div className="flex jastify-center md:justify-end">
                 <Image 
                     src={'/images/bg-two.png'}
                     alt="bg img"

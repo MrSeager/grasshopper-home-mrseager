@@ -9,7 +9,7 @@ export default function SectionThree() {
 
     return(
         <div className="bg-[#fcfcfc] py-5 w-full flex flex-col gap-3 items-center justify-center">
-            <h2 className="text-[#43687a] font-semibold text-[40px]">Grasshopper stories</h2>
+            <h2 className="text-[#43687a] text-center font-semibold text-[40px] px-5">Grasshopper stories</h2>
             <div className="overflow-hidden w-full py-15">
                 <div
                     className="flex transition-transform duration-500 w-full md:w-[75%] lg:w-[40%] mx-auto"

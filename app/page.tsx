@@ -1,12 +1,14 @@
 //Components
 import HeaderNav from "@/components/HeaderNav";
 import MainSection from "@/components/MainSection";
+import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
   return (
     <div className="select-none flex flex-col flex-1 items-center justify-start text-[#b8c6ce] font-sans bg-[#fcfcfc]">
       <HeaderNav />
       <MainSection />
+      <FooterSection />
     </div>
   );
 }
