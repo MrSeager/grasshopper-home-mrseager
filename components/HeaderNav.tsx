@@ -72,7 +72,7 @@ export default function HeaderNav() {
                     title="menu"
                     onClick={() => setIsOpen(!isOpen)}
                 >
-                    {isOpen ? <IoMdMenu size={25} /> : <IoCloseSharp size={25} />}
+                    {isOpen ? <IoCloseSharp size={25} /> : <IoMdMenu size={25} />}
                 </button>
             </nav>
         </header>
